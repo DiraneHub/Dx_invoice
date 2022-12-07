@@ -1,0 +1,58 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800,300italic,400italic,600italic);
+body,
+a {
+  font-family: "Courier", "Open Sans", "Trebuchet MS", "Lucida Sans Unicode";
+  color: #4f5155;
+  font-size: 11px;
+}
+
+.logo {
+  margin: 0 2.5rem;
+  text-align: left;
+}
+.logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+hr {
+  margin: 1rem 2.5rem;
+}
+table {
+  text-align: justify;
+}
+input {
+  padding: 3px;
+  margin: 3px;
+  width: 45%;
+}
+.input_large {
+  width: 94%;
+}
+.input_small {
+  width: 20%;
+}
+
+#invoice_pane {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 750px;
+  height: 100%;
+}
+#settings_pane {
+  position: absolute;
+  top: 0;
+  left: 770px;
+  width: calc(98% - 770px);
+  height: auto;
+  border-left: 2px solid #d8d8d8;
+  font-size: 12px;
+  padding: 5px;
+}
+
+@media print {
+  .do_not_print {
+    display: none;
+  }
+}
